@@ -24,8 +24,12 @@ Work on interpretable latent spaces shows that generative models often encode me
 
 For human motion, Xu et al. (2024) proposed Semantic Latent Directions (SLD) for motion prediction. SLD learns a set of orthogonal latent directions during training and represents each predicted future motion as a linear combination of them. Changing the coefficients at inference time gives controllable and varied predictions. This shows that a motion latent space can be organised into directions that control movement. However, SLD builds the directions into the model’s training, and their meanings are described qualitatively. None of them is linked to a measurable physical quantity.
 
+.....feel free to add here
+
 ##Research gap: 
 These two papers leave a gap. GANSpace shows that unsupervised discovery works for images, but it has not been tested on human motion. SLD shows that latent directions can control motion, but only when the model is trained to have them, and the directions have no physical meaning. This project discovers directions after training, in an existing motion model, and tests them against physical quantities measured from the motion itself (walking speed in m/s, jump height in m). It also tests whether the supervised direction matches an unsupervised principal component.
+
+.....feel free to add here
 
 ## Hypothesis
 
@@ -34,6 +38,8 @@ These two papers leave a gap. GANSpace shows that unsupervised discovery works f
 2. The direction for the physical parameter closely matches one of the main directions of variation in the latent space, so it can be found without any labels.
 
 3. Moving along the direction changes the parameter smoothly and predictably within the range seen in training, but motion quality and control accuracy drop when pushing beyond that range.
+
+.....feel free to add here
 
 ##References
 
