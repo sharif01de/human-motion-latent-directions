@@ -3,7 +3,9 @@ __pycache__/
 .ipynb_checkpoints/
 
 data/raw/
-data/processed/
+data/body_models/
+data/processed/*
+!data/processed/*.ipynb
 
 experiments/results/
 *.pt
